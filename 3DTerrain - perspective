@@ -34,7 +34,7 @@ function draw() {
     }
     yoff += 0.2;
   }
-  background(100);
+  background(10, 10, 250);
   orbitControl(); //마우스 또는 트랙 패드로 3D 스케치 주위를 움직일 수 있습니다. 
   translate(0, 50);
   rotateX(PI / 3);
@@ -45,7 +45,7 @@ function draw() {
     for (var x = 0; x < cols; x++) {
       let v = terrain[x][y];
       v = map(v, -100, 100, 0, 255); 
-      fill(v-10, v-10, v-10); //지형 색 변경
+      fill(v-110, v-20, v-110); //지형 색 변경
       vertex(x * scl, y * scl, terrain[x][y]);
       vertex(x * scl, (y + 1) * scl, terrain[x][y + 1]);
     }
