@@ -9,7 +9,7 @@ var terrain = [];
 
 function setup() {
   createCanvas(600, 600, WEBGL);
-  perspective(PI / 3.0, width / height, 0.1, 500); //카메라 투시 투영법을 설정
+  perspective(PI / 2.0, 800 / height, 0.1, 500); //카메라 투시 투영법을 설정
   cols = w / scl;
   rows = h / scl;
 
