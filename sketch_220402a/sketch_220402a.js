@@ -40,7 +40,7 @@ function draw() {
 
 
   background(100);
-  //orbitControl();
+  orbitControl();
   translate(0, 50);
   rotateX(PI / 3);
   fill(200, 200, 200, 150);
