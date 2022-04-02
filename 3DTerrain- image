@@ -65,7 +65,6 @@ function draw() {
   pointLight(255, 255, 255, locX, locY, 50);
   specularMaterial(250);
   shininess(50);
-  torus(30, 10, 64, 64);
   
   rotateZ(theta * 0.1);
   rotateX(theta * 0.1);
