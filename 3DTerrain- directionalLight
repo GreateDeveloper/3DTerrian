@@ -54,8 +54,8 @@ function draw() {
   translate(w /2 , h / 2 );
   push();
   //move your mouse to change light position
-  let locX = mouseX - width / 2;
-  let locY = mouseY - height / 2;
+  let locX = (mouseX / width - 0.5) * 2
+  let locY = (mouseY / height - 0.5) * 2;
   directionalLight(255, 0, 0, locX, locY, 50);
   //move the camera away from the plane by a sin wave
   camera(0, 0, 20 + sin(frameCount * 0.01) * 10, 0, 0, 0, 0, 1, 0);
