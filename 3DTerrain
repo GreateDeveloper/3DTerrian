@@ -1,10 +1,3 @@
-// Daniel Shiffman
-// http://codingtra.in
-// https://youtu.be/IKB1hWWedMk
-// https://thecodingtrain.com/CodingChallenges/011-perlinnoiseterrain.html
-
-// Edited by SacrificeProductions
-
 var cols, rows;
 var scl = 20;
 var w = 1400;
