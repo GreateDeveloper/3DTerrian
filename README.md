@@ -104,9 +104,9 @@ let locY = mouseY - height / 2;
 pointLight(255, 255, 255, locX, locY, 50); //색상과 조명 위치를 갖는 포인트 라이트
 ```
 * 빛 반사
-`specularMaterial(250);` // 빛 반사 일으키기`
+`specularMaterial(250);` // 빛 반사 일으키기
 * 광택
-`shininess(50);` // 셰이더 표면의 광택 양을 설정`
+`shininess(50);` // 셰이더 표면의 광택 양을 설정
 
 ---
 
