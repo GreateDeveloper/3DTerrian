@@ -76,46 +76,52 @@ for (var y = 0; y < rows - 1; y++) {
 
 ### `box`에 사진 넣기
 
+* 이미지 파일 불러오기
 ```
 function preload() {
   img = loadImage('Corgi.jpg');
 }
 ```
-function draw()에
+* 이미지를 텍스처 랜더링
+  * function draw()에
 `texture(img);`
 
 ---
 
 ### 마우스로 3D 스케치 주위를 움직이기
-
-function draw()에
-
+* 카메라 시점 이동  
+  * function draw()에
 `orbitControl();` // 마우스 또는 트랙 패드로 3D 스케치 주위를 움직일 수 있습니다. 
 
 ---
 
 ### `box`에 빛 반사 일으키기
+* `box`를 반사시키기 위한 `pointLight`
 
 ```
 let locX = mouseX - width / 2;
 let locY = mouseY - height / 2;
 pointLight(255, 255, 255, locX, locY, 50); //색상과 조명 위치를 갖는 포인트 라이트
-specularMaterial(250); // 빛 반사 일으키기
-shininess(50); // 셰이더 표면의 광택 양을 설정
 ```
+* 빛 반사
+`specularMaterial(250);` // 빛 반사 일으키기`
+* 광택
+`shininess(50);` // 셰이더 표면의 광택 양을 설정`
 
 ---
 
 ### `box` 돌리기
 
-`let theta = 0;`
+`let theta = 0;` // 각도 0도
 
-```
-rotateZ(theta * 0.1); // z축을 따라 회전합니다.
-rotateX(theta * 0.1); // x축을 따라 회전합니다.
-rotateY(theta * 0.1); // y축을 따라 회전합니다.
-theta += 0.05;
-```
+`rotateZ(theta * 0.1);` // z축을 따라 회전합니다.  
+`rotateX(theta * 0.1);` // x축을 따라 회전합니다.  
+`rotateY(theta * 0.1);` // y축을 따라 회전합니다.  
+`theta += 0.05;`
+
+
+---
+### 구현
 
 ---
 
