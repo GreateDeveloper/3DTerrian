@@ -122,7 +122,7 @@ pointLight(255, 255, 255, locX, locY, 50); //색상과 조명 위치를 갖는 �
 
 ---
 ### 구현
-![3DTerrain 구현](ezgif.com-gif-maker.gif)
+![3DTerrain 구현](corgimove.gif)
 ---
   
 ### 소감
